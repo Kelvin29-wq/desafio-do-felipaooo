@@ -29,11 +29,49 @@ if(experiencia < 1000){
   console.log("Nível do Herói: Platina");
 } else if (experiencia >= 8001 && experiencia <= 9000){ 
   console.log("Nível do Herói: Ascendente");
-} else if (experiencia >= 9001 && experiencia <= 10000){
-  console.log("Nível do Herói: Imortal");
-}else if (experiencia > 10000){ 
-  console.log("Nível do Herói: Radiante");
+}
+
+
+switch (experiencia) {
+  case (experiencia < 1000):
+    console.log("Nível do Herói: Ferro");
+    break;
+
+  case (experiencia >= 1001 && experiencia <= 2000):
+    console.log("Nível do Herói: Bronze");
+    break;
+
+  case (experiencia >= 2001 && experiencia <= 5000):
+    console.log("Nível do Herói: Prata")
+    break;
+
+  case (experiencia >= 5001 && experiencia <= 7000):
+    console.log("Nível do Herói: Ouro");
+    break;
+
+  case (experiencia >= 7001 && experiencia <= 8000):
+    console.log("Nível do Herói: Platina");
+    break;
+
+  case (experiencia >= 8001 && experiencia <= 9000):
+    console.log("Nível do Herói: Ascendente");
+    break;
+
+  case (experiencia >= 9001 && experiencia <= 10000):
+    console.log("Nível do Herói: Imortal");
+    break;
+
+  case (experiencia >= 10001):
+    console.log("Nível do Herói: Radiante");
+    break;
+
+  default:
+    console.log("XP inválida. Por favor, insira um valor válido.");
+    break;
+
+
+
 }
 
 //Mensagem Final
-console.log(`O Herói de nome ${nomeHeroi}, com ${missoesRealizadas} missões realizadas, está no nível de ${experiencia} XP.`);
+console.log(`O Herói de nome ${nomeHeroi} está no nível de ${experiencia} `);

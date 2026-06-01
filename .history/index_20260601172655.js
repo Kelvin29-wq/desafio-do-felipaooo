@@ -31,9 +31,9 @@ if(experiencia < 1000){
   console.log("Nível do Herói: Ascendente");
 } else if (experiencia >= 9001 && experiencia <= 10000){
   console.log("Nível do Herói: Imortal");
-}else if (experiencia > 10000){ 
+}else if (experiencia > 10000){
   console.log("Nível do Herói: Radiante");
 }
 
 //Mensagem Final
-console.log(`O Herói de nome ${nomeHeroi}, com ${missoesRealizadas} missões realizadas, está no nível de ${experiencia} XP.`);
+console.log(`O Herói de nome ${nomeHeroi}, com ${} nível de ${experiencia} `);

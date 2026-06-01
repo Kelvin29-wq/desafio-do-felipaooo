@@ -1,0 +1,1 @@
+//"npm install prompt-sync" comando usado para instlara
